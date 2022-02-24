@@ -30,10 +30,12 @@ h3,span,a,h1,h2,p,div{
     z-index: 200;
     user-select: none;
     padding: 15px 0;
-    transition: all .3s;
+    overflow: hidden;
+    transition: all .1s;
 }
 .navbar>div{
     max-width: 1366px;
+    height: 123px;;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -142,11 +144,12 @@ h3,span,a,h1,h2,p,div{
 }
 .navbar>div>div>div:first-child>div:first-child>div:last-child{
     /* border: 1px solid red; */
+    
     user-select: none;
     margin-right: 50px;
     cursor: auto;
     position: relative;
-    -webkit-tap-highlight-color: transparent;
+    /* -webkit-tap-highlight-color: transparent; */
     width: 100%;
     display: block;
 }
@@ -155,11 +158,10 @@ h3,span,a,h1,h2,p,div{
     background: #10847e;
     user-select: none;
     cursor: auto;
+    
 }
 .navbar>div>div>div:first-child>div:first-child>div:last-child>div>div{
     border: 0 solid transparent;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
     height: 50px;
     background: #fff;
     /* border: 1px solid #8897a2; */
@@ -169,10 +171,11 @@ h3,span,a,h1,h2,p,div{
     padding-left: 10px;
     overflow: hidden;
     display: flex;
-
     align-items: center;
     user-select: none;
     cursor: auto;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .navbar>div>div>div:first-child>div:first-child>div:last-child>div>div>div:first-child{
     order: 5;
@@ -190,25 +193,24 @@ h3,span,a,h1,h2,p,div{
     order: 1;
     margin-right: 10px;
     order: 3;
-    font-size: 14px;
     margin-left: 5px;
-    border: none;
     width: 100%;
-    color: rgba(0, 0, 0, 0.87);
     cursor: text;
-    display: inline-flex;
-    font-family: 'Open Sans', sans-serif;
     line-height: 1.1875em;
-    align-items: center;
     height: 45px;
     box-sizing: border-box;
-    font-family: Open Sans,sans-serif;
-    font-size: 16px;
-    border: 1px solid #8897a2;
+    /* border: 1px solid #8897a2; */
     border-radius: 6px;
     overflow: hidden;
 }
-
+.navbar>div>div>div:first-child>div:first-child>div:last-child>div>div>div:last-child>input{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #8897a2;
+    border: none;
+}
 .navbar>div>div>div:first-child>div:last-child{
     /* border: 1px solid red; */
     width: 200px;
@@ -245,6 +247,10 @@ h3,span,a,h1,h2,p,div{
     text-decoration: none;
     cursor: pointer;
 }
+.navbar>div>div>div:last-child>div>div:first-child>a:hover{
+    border-bottom: 2px solid white;
+    /* border-radius: 5px; */
+}
 .navbar>div>div>div:last-child>div>div:last-child{
     display: flex;
     align-items: center;
@@ -271,6 +277,10 @@ h3,span,a,h1,h2,p,div{
     line-height: 21px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.drop{
+    
 }
 .navbar>div>div>div:last-child>div>div:last-child>a:nth-child(3){
     position: relative;
@@ -302,9 +312,9 @@ h3,span,a,h1,h2,p,div{
     width: 24px;
 }
 .container{
-    /* padding: 0px 15px; */
+    /* padding-top: 200px; */
     position: relative;
-    margin: auto;
+    margin: 123px auto 0px;
     width: 100%;
     height: 284px;
     /* border: 4px solid blue; */
@@ -342,7 +352,7 @@ h3,span,a,h1,h2,p,div{
 .segments{
     max-width: 1366px;
     padding: 0px 15px;
-    margin:50px auto;
+    margin:30px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -422,7 +432,7 @@ h3,span,a,h1,h2,p,div{
     justify-self: flex-start;
     font-weight: 700;
     cursor: pointer;
-    
+
     user-select: none;
     flex-shrink: 0;
 }
@@ -497,6 +507,196 @@ h3,span,a,h1,h2,p,div{
     position: absolute;
     bottom: 0;
     right: 5px;
+}
+.conoff{
+    max-width: 1366px;
+    padding: 0px 15px;
+    margin-bottom: 60px;
+    margin: auto;
+}
+.offercon{
+    width: 100%;
+    border: 1px solid blue;
+    position: absolute;
+}
+.offtext{
+    margin-bottom: 20px;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    justify-content: space-between;
+    /* -webkit-box-align: center;
+    -ms-flex-align: center; */
+    align-items: center;
+}
+.offtext>div:first-child{
+    display: flex;
+    align-items: center;
+}
+.offtext>div:first-child>img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.offtext>div:first-child>h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #4f585e;
+}
+.offtext>div:last-child{
+    display: flex;
+    align-items: center;
+}
+.offtext>div:last-child>a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #10847e;
+    text-decoration: none;
+}
+.offtext>div:last-child>div:nth-child(2){
+    margin-left: 30px;
+    height: 40px;
+    width: 40px;
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center; */
+    justify-content: center;
+    /* -webkit-transition: all .3s;
+    -o-transition: all .3s; */
+    transition: all .3s;
+    color: #4f585e;
+    border-radius: 6px;
+    opacity: 1;
+    cursor: pointer;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    /* -webkit-box-align: center;
+    -ms-flex-align: center; */
+    align-items: center;
+}
+.offtext>div:last-child>div:nth-child(2):hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.offtext>div:last-child>div:nth-child(3){
+    margin-left: 15px;
+    /* -webkit-transform: rotateY(180deg); */
+    transform: rotateY(180deg);
+    height: 40px;
+    width: 40px;
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center; */
+    justify-content: center;
+    /* -webkit-transition: all .3s;
+    -o-transition: all .3s; */
+    transition: all .3s;
+    color: #4f585e;
+    border-radius: 6px;
+    opacity: 1;
+    cursor: pointer;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    /* -webkit-box-align: center;
+    -ms-flex-align: center; */
+    align-items: center;
+}
+.offtext>div:last-child>div:nth-child(3):hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.offslide{
+    position: relative;
+    min-width: 0;
+    border: 2px solid red;
+}
+.offslide>div{
+    transform: translate3d(-314px, 0px, 0px);
+    transition-duration: 0ms;
+    /* -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out; */
+    transition-timing-function: ease-out;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    /* -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform; */
+    /* -webkit-box-sizing: content-box; */
+    box-sizing: content-box;
+    list-style: none;
+}
+.offslide>div>div{
+    width: auto;
+    max-width: 100%;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform; */
+}
+.offslide>div>div>a{
+    height: 107px;
+    border-radius: 6px;
+    border: 2px solid #dfe3e6;
+    background-color: #fff;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    padding: 20px;
+    max-width: 299px;
+    text-decoration: none;
+}
+.offslide>div>div>a>div:first-child{
+    width: 60px;
+    height: 60px;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.offslide>div>div>a>div:first-child>img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.offslide>div>div>a>div:last-child{
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4f585e;
+    width: 190px;
+}
+.offslide>div>div>a>div:last-child>div:first-child{
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.5;
+    height: 42px;
+    overflow: hidden;
+}
+.offslide>div>div>a>div:last-child>div:last-child{
+    color: #8897a2;
+}
+.offslide>div>div>a>div:last-child>div:last-child>span{
+    font-weight: 700;
+    color: #4f585e;
 }
 .labban{
     max-width: 1366px;
