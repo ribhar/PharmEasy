@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container1{
+            width:  100%;
+            height: 481px;
+            /* border: 1px solid red; */
+            
+        }  
+
+        #container{
+            width:  1023px;
+            height: 481px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            font-family: sans-serif;
+            margin: auto;
+        }
+        
+        .mobile{
+            width:  250px;
+            height: 481px;
+            /* border: 1px solid red; */
+            }
+            
+        .applinks{
+            width:  390px;
+            height: 481px;
+            /* border: 1px solid red; */
+
+        }
+        .appsource{
+            /* border: 1px solid red; */
+            width: 390px;
+            height: 56px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .segment{
+            /* border: 1px solid green; */
+            height: 56px;
+            width: 175px;
+            display: flex;
+            background-color: #4f585e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            justify-content: space-between;
+            cursor: pointer;
+            
+            
+        }
+        .segment:hover{
+            background-color: #2e3235;
+        }
+       
+        .logo{
+            /* border: 1px solid blue; */
+            height: 56px;
+            width: 50px;
+           
+            
+        }
+        .link{
+            /* border: 1px solid yellow; */
+            height: 56px;
+            width: 120px;
+            margin-top: 15px;
+            font-size: 16px;
+            
+            
+            
+        }
+        div>p{
+            color: #4F585E;
+            font-size: 19px;
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            
+            
+            
+        }
+        .imageapp{
+            margin-left: 15px;
+            margin-top: 5px;
+
+        }
+       
+    
+
+
+    </style>
+</head>
+<body>
+    <div id ="container1">
+        <div id="container">
+                <div class="mobile">
+                    <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FfooterMobile.jpg&w=256&q=75" alt "mobile">
+                </div>
+                <div class="applinks">
+                    <div>
+                        <p>Download App for free</p>
+                    </div>
+                    <div class="appsource">
+                      <div class="segment">
+                          <div class="logo">
+                              <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FplayStore.png&w=32&q=75" class="imageapp">
+                          </div>
+                          <div class="link"> 
+                            <a href ="https://play.google.com/store/apps/details?id=com.phonegap.rxpal&hl=en_IN&gl=US&utm_source=web&utm_medium=footer" class="linked">Google Play</a>
+                          </div> 
+                      </div>
+                      <div class="segment">
+                          <div class="logo">
+                          <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FappStore.png&w=32&q=75" class="imageapp">
+                          </div>
+                          <div class="link">
+                           <a href="https://apps.apple.com/in/app/pharmeasy-healthcare-app/id982432643" class="linked">App Store</a>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div></div>
+        </div>
+
+
+    </div>
+</body>
+</html>
