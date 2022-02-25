@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=“icon” href=”./favicon.ico” type=“image/x-icon”>
-    <link rel=“shortcut icon” href=“favicon.ico” type=“image/x-icon”>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
@@ -39,7 +37,7 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <input aria-invalid="false"
+                                        <input id="search" onkeyup="searchfun()" aria-invalid="false"
                                             placeholder="Search medicines/Healthcare products @18% Off" type="text"
                                             value="">
                                     </div>
@@ -65,7 +63,20 @@
                             </a>
                             <div>
                                 <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="">
-                                <div class="drop">Login / Signup</div>
+                                <ul style="list-style-type: none">
+                                    <li class="user">Login / Signup
+                                        <ul style="list-style-type: none" class="submenu">
+                                            <li>My Orders</li>
+                                            <li>My Refils</li>
+                                            <li>Medical Records</li>
+                                            <li>My Profile</li>
+                                            <li>Wallet</li>
+                                            <li>Refer & Earn</li>
+                                            <li>Notification</li>
+                                            <li>Log Out</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                             <a href="">
                                 <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt="">
@@ -84,17 +95,17 @@
         <div class="slide">
             <img id="last"
                 src="https://cms-contents.pharmeasy.in/banner/dd96b2e3812-Yoga_Dweb.jpg?dim=1440x0&dpr=1&q=100">
-            <img src="https://cms-contents.pharmeasy.in/banner/ff62f53c2ba-GRAND25DWEB.jpg?dim=1440x0&dpr=1&q=100"
+            <img src="https://cms-contents.pharmeasy.in/banner/933638acbb0-FRIDAY25.jpg?dim=1440x0&dpr=1&q=100"
                 alt="">
-            <img src="https://cms-contents.pharmeasy.in/banner/48a1439746f-EASY400.jpg?dim=1440x0&dpr=1&q=100" alt="">
+            <img src="https://cms-contents.pharmeasy.in/banner/d36c35bbac3-Dweb.jpg?dim=1440x0&dpr=1&q=100" alt="">
             <img src="https://cms-contents.pharmeasy.in/banner/60fb9bbcf9a-DWEB.jpg?dim=1440x0&dpr=1&q=100" alt="">
             <img src="https://cms-contents.pharmeasy.in/banner/c779a38822e-Loss_Dweb_.jpg?dim=1440x0&dpr=1&q=100"
                 alt="">
-            <img src="https://cms-contents.pharmeasy.in/banner/b06a67e4fc7-Sarva_dWeb.jpg?dim=1440x0&dpr=1&q=100"
+            <img src="https://cms-contents.pharmeasy.in/banner/3737b513b25-dweb.jpg?dim=1440x0&dpr=1&q=100"
                 alt="">
             <img src="https://cms-contents.pharmeasy.in/banner/dd96b2e3812-Yoga_Dweb.jpg?dim=1440x0&dpr=1&q=100" alt="">
             <img id="first"
-                src="https://cms-contents.pharmeasy.in/banner/ff62f53c2ba-GRAND25DWEB.jpg?dim=1440x0&dpr=1&q=100"
+                src="https://cms-contents.pharmeasy.in/banner/933638acbb0-FRIDAY25.jpg?dim=1440x0&dpr=1&q=100"
                 alt="">
         </div>
     </div>
