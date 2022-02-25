@@ -37,3 +37,15 @@ var slide = document.querySelector(".slide");
             slide.style.transform = 'translateX(' + (-size * count) +'px)';
         }
     });
+
+
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.querySelector(".navbar").style.height = "80px";
+    } else {
+        document.querySelector(".navbar").style.height = "123px";
+    }
+    }
