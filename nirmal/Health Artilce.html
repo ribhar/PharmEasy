@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" type="text/css" href="owl.carousel.min.css">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="http://www.w3schools.com/w3css/4/w3.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
 
     <style>
         .healthart{
@@ -40,7 +40,7 @@
             font-family: sans-serif;
             display: flex;
             gap: 20px;
-            overflow: hidden;
+            /* overflow: hidden; */
             
         }
         .container1{
@@ -100,24 +100,19 @@
         }
     </style>
 </head>
-<d>
-    
-    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": true}'>
+
+
     <div class="healthart">
     <h2 id="h2">Health Article</h2>
     <a href="https://pharmeasy.in/blog/" class="seeall" >See All</a>
     </div>
-   
-    
-    
-   
-    
-   
 
-    <div id="container">
+
+    <section id="slider" class="pt-5">
+    <div id="container"> 
 
         
-        <div class="carousel-cell">
+        
             
         <div class="container1">
 
@@ -137,9 +132,9 @@
             <a href="https://pharmeasy.in/blog/?p=156110" class="anchor1">Read More ></a>
             </div>
           </div>
-        </div>
+        
 
-        <div class="carousel-cell">
+       
         <div class="container1">
             <div class ="pic">
                 <img src ="https://blog-images.pharmeasy.in/2022/02/22194540/Condom.jpg?dim=0x230&dpr=0.800000011920929&q=100" class="pict" alt="pic">
@@ -156,9 +151,9 @@
                 <a href="https://pharmeasy.in/blog/?p=156057" class="anchor1">Read More ></a>
             </div>
             </div>
-            </div>
+            
 
-            <div class="carousel-cell">
+            
             <div class="container1">
                 <div class ="pic">
                     <img src ="https://blog-images.pharmeasy.in/2022/02/21192247/BLOG-01.jpg?dim=0x230&dpr=0.800000011920929&q=100" class="pict" alt="pic">
@@ -175,10 +170,10 @@
                     <a href="https://pharmeasy.in/blog/?p=156106" class="anchor1">Read More ></a>
                 </div>
                 </div>
-                </div>
+                
 
 
-                <div class="carousel-cell"> 
+               
                 <div class="container1">
         <div class ="pic">
             <img src ="https://blog-images.pharmeasy.in/2022/02/21170136/Soap.jpg?dim=0x230&dpr=0.800000011920929&q=100" class="pict" alt="pic">
@@ -195,24 +190,41 @@
             <a href="https://pharmeasy.in/blog/?p=156084" class="anchor1">Read More ></a>
         </div>
         </div>
-        </div>
+        
 
 
     </div>
             
             
-    </div> 
+</section>
     
-        
-
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-   
 </body>
+
+
+<script>
+  $(doucment).ready(function(){
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
+})
+  });
+
+</script>
+<script src="owl.carousel.min.js"></script>
 </html>
