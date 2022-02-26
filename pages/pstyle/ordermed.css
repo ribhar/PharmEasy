@@ -1,0 +1,244 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    color: #4f585e;
+}
+.container{
+    height:auto;
+    width:80%;
+    margin:auto;
+}
+h2{
+    margin-top: 80px;;
+}
+p{
+    font-size: 18px;
+    font-family:"Open Sans"sans-serif;
+    color:#696b6d;
+    
+}
+b{
+    font-size: 20px;
+}
+.head{
+   
+    width:100%;
+    display:flex;
+    /* border: 1px solid yellow; */
+    margin:auto;
+    justify-content: space-between;
+}
+.left_side{
+    width:55%;
+    height:170px;
+    background-color: #10847E;
+    /* border:5px solid #10847E; */
+    border-radius: 5px  ;
+    margin-right:10px;
+    padding-left: 10px;
+}
+.discount{
+        width:80%;
+        display:flex;
+        justify-content:space-between ;
+        color:white;
+        padding-left:10px;
+        gap:10px;
+}
+#flat,#lakhplus,#easy{
+    width:120px;
+    display: flex;
+    justify-content: space-around;
+}
+#lakhplus{
+    width:140px;
+}
+.left_side>p{
+    color:white;
+    font-size: 20px;
+    margin-top:0px;
+    margin-left: 15px;
+   
+}
+.searchpart{
+    display: flex;
+    height:50px;
+    width:90%;
+    /* border:1px solid red; */
+    gap:10px;
+    background-color: white;
+    margin-top: -10px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+.searchbox{
+    height:auto;
+    width:80%;
+    border-radius: 5px ;
+    border:none;
+}
+
+.right_side{
+    width:35%;
+
+}
+.top{
+    height:60px;
+    width:100%;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 5px;
+    margin-bottom:10px;
+    display:flex;
+
+}
+.top>a{
+    font-size: 13px;
+    text-decoration: none;
+    margin-top:-60px ;
+    padding-left:30px;
+    justify-content: space-between;
+    color:rgb(134, 134, 130);
+
+}
+.bottom{
+    height:160px;
+    width:100%;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 5px;
+
+}
+.bottom>p{
+    color:rgb(134, 134, 130);
+    font-size: 14px;
+    padding-left:30px;
+    
+}
+.bottom>li{
+    color:rgb(61, 61, 58);
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.mobileNo{
+    height:50px;
+    width:300px ;
+    margin-left: 40px;
+    background-color: #10847E;
+    margin-top: -10px;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+.mobileNo>p{
+    padding: 15px ;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.slider{
+    height:auto;
+    width:100%;
+    
+   margin-top:40px;
+   
+    box-sizing: border-box;
+    position:relative;
+}
+.box{
+    display:flex;
+    gap:20px;
+}
+
+.box>img{
+    
+    height:250px;
+    width:80%;
+    display:flex;
+    gap:20px;
+    
+    
+}
+button{
+    height:auto;
+    width:50px;
+    padding:20px;
+    border:none;
+    background-color: white;
+    font-size: 30px;
+    color:#797e7d;
+    position:absolute ;
+    top:35%;
+    border-radius: 5px;
+    border:1px solid red;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.next{
+    margin-left:100%;
+}
+.prew{
+    margin-left: -15px;
+}
+
+.customersview{
+    height:250px;
+    width:100%;
+    display:flex;
+    border:1px solid red;
+    margin-top:30px;
+   
+}
+.customersview>div{
+    height:250px;
+    width:320px;
+    border: 1px solid green;
+    margin:auto;
+    gap:10px;
+}
+.para1{
+    height:auto;
+    width:100%;
+    border-radius: 1px solid grey;
+
+}
+
+.accordion-item{
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(34, 33, 33);
+    padding: 10px;
+}
+.accordion-link{
+    font-size: 14px;
+    font-family:"Open Sans"sans-serif;
+    color:#696b6d;
+    text-decoration: none;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.accordion-link .ion-md-remove{
+    display:none;
+}
+.answer{
+    max-height:0;
+    overflow:hidden;
+    position:relative;
+    transition:max-height 650ms;
+    padding:10px 15px;
+
+}
+
+
+.accordion-item:target .answer{
+    max-height:20rem;
+}
+.accordion-item:target .accordion-link .ion-md-add{
+        display:none;
+}
+.accordion-item:target .accordion-link .ion-md-remove{
+        display:block;
+}

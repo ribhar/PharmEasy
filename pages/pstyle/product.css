@@ -593,6 +593,14 @@ margin: 0px 0px 30px;
 position: fixed; */
 /* position: fixed; */
 }
+#viewcart{
+    text-decoration: none;
+}
+#viewoffer{
+    text-decoration: none;
+    color: #10847e;
+    font-weight: 600;
+}
 #second-1-1 {
 font-weight: 600;
 line-height: normal;

@@ -4,7 +4,7 @@ var data = JSON.parse(localStorage.getItem("prodata"));
 var cartData =   JSON.parse(localStorage.getItem("cartData")) || []
 
     document.querySelector("title").innerHTML = data.title
-    
+
     var title = document.querySelector("#title")
     title.innerText = data.title
     console.log(data.title)
