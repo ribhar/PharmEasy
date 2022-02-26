@@ -30,9 +30,10 @@ h3,span,a,h1,h2,p,div{
     z-index: 200;
     user-select: none;
     padding: 15px 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: all .1s;
 }
+
 .navbar>div{
     max-width: 1366px;
     height: 123px;;
