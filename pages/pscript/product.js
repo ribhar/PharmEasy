@@ -69,3 +69,7 @@ var cartData =   JSON.parse(localStorage.getItem("cartData")) || []
         select.innerHTML = " <select><option >Qty 0</option><option >1</option><option >2</option><option >3</option><option >4</option><option >5</option></select>"
 
 })
+
+document.getElementById("viewcart").addEventListener("click",function(){
+    window.location.href="/cart.html"
+})

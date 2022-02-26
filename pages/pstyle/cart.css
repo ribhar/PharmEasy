@@ -1,0 +1,329 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+     color: #4F585E;
+}
+
+#products{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+h4{
+    color: ;
+}
+#section1{
+    width: 60%;
+    margin: 30px;
+}
+.ediv{
+    height: 150px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.eimg{
+padding: 30px;
+}
+
+#extraproducts{
+    display: flex;
+    width: 100%;
+}
+.extra{
+    width: 25%;
+    padding: 5px;
+    
+    justify-content: center;
+}
+.addcolor{
+    color: #10847e;
+    margin-top: 15px;
+}
+.pdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.disprice{
+    line-height: 1px;
+    margin-top: 5px;
+}
+.add{
+    
+    color:#10847e ;
+    border: 1px solid #10847e;
+    border-radius: 5px;
+    padding:0px 20px 10px 20px;
+    width:80px;
+    text-align: center;
+    height: 40px;
+}
+#list{
+    width: 98%;
+}
+
+#applycoupon{
+    padding: 5px;
+}
+#numofitems{
+   display: flex;
+   justify-content: space-between;
+}
+#indi{
+    
+    margin-top: 30px;
+}
+#nums{
+    display: flex;
+}
+#delivery:hover{
+    background-color:rgb(10, 56, 54) ;
+}
+#delivery{
+    margin: 20px;
+    border-radius: 5px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    color: white;
+    background-color:#10847e ;
+}
+#offerbutton{
+  border: black 1px solid;
+  display: flex;
+  justify-content:space-between;
+  margin: 20px;
+  border-radius: 5px;
+  padding-top: 10px;
+  vertical-align: middle;
+
+}
+.offerlogo{
+  padding-top: -5px;
+}
+#section2{
+    width: 40%;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    
+    max-width:  1330px;
+}
+.date{
+    color:gray ;
+}
+.hwhite{
+    color: white;
+}
+#offerbox{
+    border-radius: 10px;
+    background-color: rgb(133,115,225) ;
+    padding: 20px;
+    color: white;
+}
+h3{
+    color:rgb(79,93,125) ;
+}
+.total{
+    color: rgb(79,93,125);
+}
+#save{
+    display: flex;
+}
+#plus{
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#sborder{
+    border: 1px dotted rgb(59,184,150);
+    border-radius: 5px;
+    background-color:rgb(242,255,248) ;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+#saving{
+    display: flex;
+}
+.order{
+    background-color: rgb(242,255,248);
+    color: rgb(59,184,150);
+    padding: 10px 30px;
+    border-radius: 10px;
+    border:1px dotted cyan ;
+    display: flex;
+    margin: 20px;
+    padding-top: 10px;
+}
+.dp{
+  
+    display: flex;
+    justify-content:center;
+}
+.quant{
+    width: 100px;
+    height: 50px;
+
+}
+.quant>select{
+    color: rgb(79,93,125);
+    margin-top: 15px;
+    padding: 5px;
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+#order{
+    background-color: F2FFF8;
+    color: rgb(59,184,150);
+    margin: 20px;
+    padding-top: 5px;
+}
+#dlogo{
+    margin-top: 15px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+}
+.qty{
+    font-weight: 10000;
+    width: 35%;
+    padding: 5px 10px;
+    color: rgb(79,93,125);
+    border: 1px solid grey;
+    border-radius: 8px
+   
+}
+.dis{
+    color: orange;
+    width: 100px;
+}
+.pimg{
+    padding: 30px;
+    height: 60px;
+    width: 70px;
+}
+#value{
+    color: rgb(79,93,125);
+    border-bottom: 2.5px dotted rgb(79,93,125);
+    display: flex;
+    justify-content: space-between;
+}
+#totalvalue{
+    display: flex;
+    justify-content: space-between;
+}
+.pname{
+    color:rgb(79,93,125) ;
+}
+/* css for apply coupon */
+.collapsible:after {
+    content: '\21E8'; /* Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\21E9"; /* Unicode character for "minus" sign (-) */
+  }
+          /* Style the button that is used to open and close the collapsible content */
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  
+  .collapsible:after {
+    content: '\02C3'; /* Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+    float: right;
+    margin-left: 5px;
+  }  
+  
+  
+          /* Style the button that is used to open and close the collapsible content */
+  .collapsible { 
+    color:  rgb(59,184,150);
+    border:  rgb(59,184,150);
+    cursor: pointer;
+    padding:10px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    
+  }
+  .cname{
+      padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .coupon{
+        padding: 20px;
+        border-bottom: 1px rgb(79,93,125) dotted;
+        
+        margin: -20px 10px;
+    }
+    .couponname{
+      border-radius: 5px;
+        padding: 10px;
+        margin-left: -8px;
+        color: orange;
+        border: 1.5px dotted orange;
+      
+    }
+    #input{
+      padding: 10px;  
+      border-radius: 5px;
+      width: 80%;
+    }
+    .abutton{
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+        color: rgb(59,184,150);
+    }
+    .abutton:hover{
+      color: rgb(34, 107, 88);
+    }
+    .offerdetail{
+        margin-top: -30px;
+        
+    }
