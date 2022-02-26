@@ -1,17 +1,20 @@
   var cart =JSON.parse(localStorage.getItem("cartData")) || [];
-
+// console.log(cart)
     for(i=0; i<cart.length; i++){
    
+  
     var nums= document.getElementById("itemnums");
     nums.innerText= cart.length ;
 
     var products = document.createElement("div")
     products.setAttribute("id","products");
 
-     var img = document.createElement("img");
-     img.setAttribute("class","pimg")
-     img.src= cart[i].img;
+    var dimg = document.createElement("div");
 
+     var img = document.createElement("img");
+     img.setAttribute("src",cart[i].img)
+    //  img.src= cart[i].imgs1;
+    dimg.append(img)
      var pdetails = document.createElement("div")
     pdetails.setAttribute("class","pdetails");
 
@@ -51,7 +54,7 @@
     qdiv.setAttribute("class","pdiv")
     qdiv.append(quant,disprice)
      pdetails.append(pname,qdiv,date)
-    products.append(img,p);
+    products.append(dimg,p);
     list.append(products );
     }
 
@@ -71,3 +74,24 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+document.getElementById("delivery").addEventListener("click", function(){
+  window.location.href= "payment.html"
+})
+
+
+
+//     onscroll function  //////////////////////////////////////////////////////
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".navbar").style.height = "80px";
+    document.querySelector(".overflowbar").style.visibility = "hidden"
+    // console.log(document.querySelector(".overflowbar").innerHTML)
+} else {
+    document.querySelector(".navbar").style.height = "123px";
+    document.querySelector(".overflowbar").style.visibility = "visible"
+}
+}
+//  //      onscroll function  end //////////////////////////////////////////////////

@@ -493,7 +493,7 @@ h3,a,h1,h2,p{
 .plusservice{
     /* border: 1px solid red; */
     padding: 60px 15px;
-    margin: 0px auto 60px;
+    margin: 0px auto 0px;
     max-width: 1366px;
     user-select: none;
 }
@@ -543,7 +543,7 @@ h3,a,h1,h2,p{
 
 .labban{
     max-width: 1366px;
-    padding: 50px 15px;
+    padding: 0 15px;
     margin: auto;
 }
 .labban>img{
@@ -554,7 +554,7 @@ h3,a,h1,h2,p{
     max-width: 1366px;
     height: 400px;
     padding: 0px 15px;
-    margin: 200px auto;
+    margin: 40px auto 0px;
     overflow: hidden;
     position: relative;
 }
@@ -632,91 +632,8 @@ h3,a,h1,h2,p{
     font-size: 18px;
     font-weight: 600;
 }
-.reviws{
-    max-width: 1366px;
-    height: 400px;
-    padding: 0px 15px;
-    margin: 0px auto;
-    overflow: hidden;
-    position: relative;
-}
-.reviwshead{
-    /* font-size: 20px; */
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.5;
-    color: #4f585e;
-    margin-bottom: 25px;
-}
-.rbtn{
-    position: absolute;
-    top: 40%;
-    font-size: 60px;
-    font-weight: bold;
-    color: #4f585e;
-    cursor: pointer;
-    left: .5%;
-    z-index: 1;
 
-}
-.rbtn:nth-of-type(2){
-    left: 98%;
-    text-align: right;
-}
-.rsliders{
-    max-width: 1366px;
-    padding: 0px 15px;
-    height: 300px;
-    /* background: blue; */
-    margin: 10px auto;
-    display: flex;
-    justify-content: left;
-    overflow-x: auto;
-}
-.rsliders::-webkit-scrollbar{
-    visibility: hidden;
-}
-.DD{
-    min-width: 330px;
-    height: 200px;
-    position: relative;
-    left: 0;
-    text-align: center;
-    /* padding-top: 60px; */
-    font-size: 100px;
-    font-weight: bold;
-    margin: 10px 10px ;
-    color: white;
-    /* background: purple; */
-    transition: 0.5s;
-}
-.per{
-    font-size: 14px;
-    text-align: left;
-    color: #4f585e;
-    
-}
-.per1{
-    font-size: 14px;
-    text-align: left;
-    margin-bottom: 20px;
-    color: #8897a2;
-}
-.D-1{
-    /* border: 1px solid red; */
-    height: 200px;
-    width: 280px;
-    font-size: 12px;
-    text-align: left;
-    padding:20px;
-    background: #f2fff8;
-    border-radius: 4px;
-}
-.per2{
-    padding-top: 20px;
-    font-size: 12px;
-    color: #4f585e;
-}
+
 .appbanner{
     background-color: #f2f5f5 ;
     /* border: 1px solid red; */

@@ -99,41 +99,8 @@ var slide = document.querySelector(".slide");
 
 ////////// review slider start   ///////////////////////////////////
 
-var span1 = document.getElementById("rpre")    
-    var span2 = document.getElementById("rnex")
-    var div = document.getElementsByClassName("DD")
-    // console.log(div)
-    var l =0;
-    span2.onclick = ()=>{
-        l++;
-        for(var i of div)
-        {
-            if(l==0){i.style.left = "0px";}
-            if(l==1){i.style.left = "-740px";}
-            if(l==2){i.style.left = "-1480px";}
-            if(l==3){i.style.left = "-2220px";}
-            if(l==4){i.style.left = "-2960px";}
-            if(l>4){l=4;}
-        }
-    }
-    span1.onclick = ()=>{
-        l--;
-        for(var i of div)
-        {
-            if(l==0){i.style.left = "0px";}
-            if(l==1){i.style.left = "-740px";}
-            if(l==2){i.style.left = "-1480px";}
-            if(l==3){i.style.left = "-2220px";}
-            if(l<0){l=0;}
-        }
-    }
-
-////////// review slider end  ///////////////////////////////////
 
 
-
-
-///////// store data sliding function end ////////////////////////////
 
     var data = [
       ["https://cms-contents.pharmeasy.in/carousel_item/f7a36c06aed-web_Dettol.jpg?dim=146x0&dpr=0.8999999761581421&q=100",[{
