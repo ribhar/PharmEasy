@@ -345,8 +345,9 @@ body{
 }
 #offercontainer {
     width: 70%;
-    margin: 200px auto;
+    margin: 300px auto;
     margin-top: 20px;
+    padding: 150px 0px;
   }
 
   #home>span {
