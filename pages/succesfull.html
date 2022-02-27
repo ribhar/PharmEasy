@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./pstyle/store.css">
+    <link rel="stylesheet" href="./pstyle/cart.css">
+    <style>
+        h1{
+            color: #10847e;
+            margin: 150px auto;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -84,9 +91,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-
-    </div>
+    <h1>Payment Succesfull</h1>
     <footer>
         <div id="footer_con1">
             <div id="column_con">
@@ -280,4 +285,19 @@
     </footer>
 </body>
 </html>
-<script src="./pscript/store.js"></script>
+<script>
+     //     onscroll function  //////////////////////////////////////////////////////
+ window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".navbar").style.height = "80px";
+    document.querySelector(".overflowbar").style.visibility = "hidden"
+    // console.log(document.querySelector(".overflowbar").innerHTML)
+} else {
+    document.querySelector(".navbar").style.height = "123px";
+    document.querySelector(".overflowbar").style.visibility = "visible"
+}
+}
+//  //      onscroll function  end //////////////////////////////////////////////////
+</script>

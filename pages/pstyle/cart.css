@@ -696,3 +696,111 @@ h3{
         margin-top: -30px;
         
     }
+    footer{
+        height: auto;
+        background-color: #f4f7fb;
+    }
+    #footer_con1{
+        max-width: 1366px;
+        margin: auto;
+        padding: 40px 15px 0px;
+        height: auto;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    #footer_con2{
+        /* border: 1px solid blue; */
+        max-width: 1366px;
+        margin: auto;
+        padding: 0px 15px 0px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #paypart{
+        /* border: 1px solid red; */
+        width: 60%;
+        margin-right: 20px;
+    }
+    #copyright{
+        /* border: 1px solid red; */
+        width: 40%;
+        text-align: end;
+    }
+    #paypart>h4{
+        margin-top: 0;
+    }
+    #paypart>div>span{
+        max-height: 30px;
+        width: 50px;
+        height: 30px;
+        margin-right: 15px
+    }
+    #paypart>div>span>img{
+        width: 50px;
+        height: 30px;
+    }
+    #copyright>p{
+        /* border: 1px solid red; */
+        margin-top: 50px;
+    }
+    #column_con{
+        /* border: 1px solid red; */
+        width: 80%;
+        margin-right: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #column_con>div{
+        /* border:1px solid blue; */
+        width:30%;
+        height: auto;
+    }
+    #column_con>div>div{
+        /* border: 1px solid red; */
+        margin-bottom: 30px;
+    }
+    #column_con>div>div>h4{
+        font-weight: 700;
+        letter-spacing: 0;
+        margin: 0px 0px 15px;
+    }
+    #column_con>div>div>a{
+        margin: 0px 0px 15px;
+        font-weight: lighter;
+        color: #4f585e;
+        display: block;
+        text-decoration: none;
+    }
+    #follow_con{
+        /* border:1px solid blue; */
+        width: 20%;
+    }
+    #follow_con>div{
+        /* border: 1px solid red; */
+        width:250px;
+        height: auto;
+    }
+    #follow_con>div>h4{
+        /* border:1px solid red; */
+    
+        font-weight: 700;
+        letter-spacing: 0;
+        margin: 0px 0px 15px 0px;
+    }
+    #follow_con>div>div{
+        /* border:1px solid blue; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #follow_con>div>div>a{
+        color: #10847e;
+        width: 40px;
+        height: 40px;
+    }
+    .icons{
+        color: #10847e;
+    }
