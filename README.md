@@ -3,7 +3,7 @@ PharmEasy is one of India's most trusted online pharmacy & medical stores offeri
 
 ### Live deployed URL: https://pharmeasyin.netlify.app/
 
-### Blog Post: https://medium.com/@ribhar/project-pharmeasy-clone-1d571b2c0839
+### Blog URL: https://medium.com/@ribhar/project-pharmeasy-clone-1d571b2c0839
 
 
  <h2>Landing Page</h2>
