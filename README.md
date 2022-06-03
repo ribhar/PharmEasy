@@ -1,5 +1,5 @@
-<h1>Bath and Body Works</h1>
-Bath &amp; Body Works, LLC. is an American retail store chain which sells soaps, lotions, fragrances, and candles. It was founded in 1990 in New Albany, Ohio and has since expanded across 6 continents. In 1997, it was the largest bath shop chain in the United States.
+<h1>PharmEasy</h1>
+PharmEasy is one of India's most trusted online pharmacy & medical stores offering pharmaceutical and healthcare products. A web application to buy medicines and book lab test appointments.
 
 ### Live deployed URL: https://pharmeasyin.netlify.app/
 
